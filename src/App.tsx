@@ -1,5 +1,6 @@
 import { Button } from "./components/ui/Button";
-import { Htag } from "./components/ui/Htag";
+import { Heading } from "./components/ui/Heading";
+import { Paragraph } from "./components/ui/Paragraph";
 
 const App = () => {
     return (
@@ -10,10 +11,15 @@ const App = () => {
                 <Button appearance="red">Discard</Button>
             </div>
             <div>
-                <Htag tag="h1">Hello, h1!</Htag>
-                <Htag tag="h2">Hello, h2!</Htag>
-                <Htag tag="h3">Hello, h3!</Htag>
-                <Htag tag="h4">Hello, h4!</Htag>
+                <Heading tag="h1">Hello, h1!</Heading>
+                <Heading tag="h2">Hello, h2!</Heading>
+                <Heading tag="h3">Hello, h3!</Heading>
+                <Heading tag="h4">Hello, h4!</Heading>
+            </div>
+            <div>
+                <Paragraph size="small">Small paragraph</Paragraph>
+                <Paragraph size="medium">Medium paragraph</Paragraph>
+                <Paragraph size="large">Large paragraph</Paragraph>
             </div>
         </>
     );
