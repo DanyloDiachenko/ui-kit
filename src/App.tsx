@@ -2,6 +2,7 @@ import { Button } from "./components/ui/Button";
 import { Heading } from "./components/ui/Heading";
 import { Input } from "./components/ui/Input";
 import { Paragraph } from "./components/ui/Paragraph";
+import { Textarea } from "./components/ui/Textarea";
 
 const App = () => {
     return (
@@ -24,6 +25,7 @@ const App = () => {
             </div>
             <div>
                 <Input placeholder="Type here..." />
+                <Textarea placeholder="Type lot of text here..." />
             </div>
         </>
     );
