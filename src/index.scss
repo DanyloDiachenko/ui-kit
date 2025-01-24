@@ -33,8 +33,13 @@ body {
 }
 
 a {
-    color: inherit;
+    color: var(--purple);
     text-decoration: none;
+    transition: 0.3s;
+
+    &:hover {
+        color: var(--purple-light);
+    }
 }
 
 .visuallyHidden {
