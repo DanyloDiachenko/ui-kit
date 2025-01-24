@@ -3,6 +3,7 @@ import { Heading } from "./components/ui/Heading";
 import { Input } from "./components/ui/Input";
 import { Paragraph } from "./components/ui/Paragraph";
 import { Textarea } from "./components/ui/Textarea";
+import { Link } from "react-router";
 
 const App = () => {
     return (
@@ -26,6 +27,9 @@ const App = () => {
             <div>
                 <Input placeholder="Type here..." />
                 <Textarea placeholder="Type lot of text here..." />
+            </div>
+            <div>
+                <Link to="/login">Login</Link>
             </div>
         </>
     );
