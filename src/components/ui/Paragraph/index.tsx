@@ -1,7 +1,7 @@
-import { PProps } from "./P.props";
+import { ParagraphProps } from "./paragraph.props";
 import styles from "./styles.module.scss";
 
-export const Paragraph = ({ size, children, className }: PProps) => {
+export const Paragraph = ({ size, children, className }: ParagraphProps) => {
     switch (size) {
         case "small":
             return (

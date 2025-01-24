@@ -1,4 +1,4 @@
-import { HeadingProps } from "./htag.props";
+import { HeadingProps } from "./heading.props";
 import styles from "./styles.module.scss";
 
 export const Heading = ({ tag, children, className }: HeadingProps) => {

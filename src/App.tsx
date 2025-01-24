@@ -1,5 +1,6 @@
 import { Button } from "./components/ui/Button";
 import { Heading } from "./components/ui/Heading";
+import { Input } from "./components/ui/Input";
 import { Paragraph } from "./components/ui/Paragraph";
 
 const App = () => {
@@ -20,6 +21,9 @@ const App = () => {
                 <Paragraph size="small">Small paragraph</Paragraph>
                 <Paragraph size="medium">Medium paragraph</Paragraph>
                 <Paragraph size="large">Large paragraph</Paragraph>
+            </div>
+            <div>
+                <Input placeholder="Type here..." />
             </div>
         </>
     );
