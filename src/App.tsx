@@ -1,11 +1,16 @@
 import { Button } from "./components/ui/Button";
+import { Checkbox } from "./components/ui/Checkbox";
 import { Heading } from "./components/ui/Heading";
 import { Input } from "./components/ui/Input";
 import { Paragraph } from "./components/ui/Paragraph";
 import { Textarea } from "./components/ui/Textarea";
 import { Link } from "react-router";
+import { RadioButton } from "./components/ui/RadioButton";
+import { useState } from "react";
 
 const App = () => {
+    const [selectedRadio, setSelectedRadio] = useState<string | null>(null);
+
     return (
         <>
             <div>
@@ -30,6 +35,32 @@ const App = () => {
             </div>
             <div>
                 <Link to="/login">Login</Link>
+            </div>
+            <div>
+                <Checkbox title="my checkbox 1" id="my-checkbox-1" />
+                <Checkbox title="my checkbox 2" id="my-checkbox-2" />
+                <Checkbox title="my checkbox 3" id="my-checkbox-3" />
+                <Checkbox title="my checkbox 4" id="my-checkbox-4" />
+            </div>
+            <div style={{ marginTop: "20px" }}>
+                <RadioButton
+                    id="apple"
+                    label="Apple"
+                    checked={selectedRadio === "apple"}
+                    onChange={() => setSelectedRadio("apple")}
+                />
+                <RadioButton
+                    id="pear"
+                    label="Pear"
+                    checked={selectedRadio === "pear"}
+                    onChange={() => setSelectedRadio("pear")}
+                />
+                <RadioButton
+                    id="orange"
+                    label="Orange"
+                    checked={selectedRadio === "orange"}
+                    onChange={() => setSelectedRadio("orange")}
+                />
             </div>
         </>
     );
