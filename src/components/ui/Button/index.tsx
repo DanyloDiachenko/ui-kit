@@ -1,5 +1,35 @@
-export const Button = () => {
-    return (
-        
-    )
-}
+import { ButtonProps } from "./button.props";
+import styles from "./styles.module.scss";
+
+export const Button = ({ children, appearance }: ButtonProps) => {
+    switch (appearance) {
+        case "gray": {
+            return (
+                <button className={`${styles.button} ${styles.gray}`}>
+                    {children}
+                </button>
+            );
+        }
+        case "purple": {
+            return (
+                <button className={`${styles.button} ${styles.purple}`}>
+                    {children}
+                </button>
+            );
+        }
+        case "red": {
+            return (
+                <button className={`${styles.button} ${styles.red}`}>
+                    {children}
+                </button>
+            );
+        }
+        default: {
+            return (
+                <button className={`${styles.button} ${styles.gray}`}>
+                    {children}
+                </button>
+            );
+        }
+    }
+};
